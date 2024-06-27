@@ -11,3 +11,4 @@
 * *Welcome 2 America*
 * *Diamonds And Pearls (Super Deluxe Edition)*
   * "Money Don’t Matter 2 Night": see [Kares' reply](https://prince.org/msg/7/470977?&pg=2) (TODO: description, timestamp)
+  * "Money Don’t Matter 2 Night": incorrect speed (TODO: description, see thread above)
