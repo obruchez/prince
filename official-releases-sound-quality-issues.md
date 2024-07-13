@@ -8,16 +8,26 @@
 
 # Posthumous releases
 
-* *Purple Rain (Deluxe Expanded Edition)*
-  * "Erotic City (Make Love Not War Erotic City Come Alive) (Extended Version)":  "glitch" right at the beginning of the track (0:00-0:01)
-* *Piano & A Microphone 1983*
-* *The Versace Experience (Prelude 2 Gold)*
-* *Originals*
-* *1999 (Super Deluxe Edition)*
-* *Sign O’ The Times (Super Deluxe Edition)*
-  * "Wally": table warble (TODO: timestamp) 
-* *Welcome 2 America*
-* *Diamonds And Pearls (Super Deluxe Edition)*
-  * "Gett Off": incorrect speed as well? (TODO: check) 
-  * "Money Don’t Matter 2 Night": see [Kares' reply](https://prince.org/msg/7/470977?&pg=2) (TODO: description, timestamp)
-  * "Money Don’t Matter 2 Night": incorrect speed (TODO: description, see thread above)
+* [*Purple Rain (Deluxe Expanded Edition)*](https://princevault.com/index.php?title=Album:_Purple_Rain_Deluxe)
+  * "Erotic City (Make Love Not War Erotic City Come Alive) (Extended Version)":
+    * 0:00-0:01
+    * "glitch" right at the beginning of the track
+* [*Piano & A Microphone 1983*](https://princevault.com/index.php?title=Album:_Piano_%26_A_Microphone_1983)
+* [*The Versace Experience (Prelude 2 Gold)*](https://princevault.com/index.php?title=Album:_The_Versace_Experience_(Prelude_2_Gold))
+* [*Originals*](https://princevault.com/index.php?title=Album:_Originals)
+* [*1999 (Super Deluxe Edition)*](https://princevault.com/index.php?title=Album:_1999_Deluxe)
+* [*Sign O’ The Times (Super Deluxe Edition)*](https://princevault.com/index.php?title=Album:_Sign_O%E2%80%99_The_Times_Deluxe)
+  * "Wally":
+    * TODO: timestamp 
+    * table warble
+* [*Welcome 2 America*](https://princevault.com/index.php?title=Album:_Welcome_2_America)
+* [*Diamonds And Pearls (Super Deluxe Edition)*](https://princevault.com/index.php?title=Album:_Diamonds_And_Pearls_SuperDeluxe)
+  * "Gett Off":
+    * TODO: check 
+    * incorrect speed as well?
+  * "Money Don’t Matter 2 Night":
+    * TODO: description, timestamp 
+    * see [Kares' reply](https://prince.org/msg/7/470977?&pg=2)
+  * "Money Don’t Matter 2 Night":
+    * TODO: description, see thread above 
+    * incorrect speed
