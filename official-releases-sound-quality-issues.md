@@ -1,3 +1,11 @@
+# Compilations
+
+* [*Black Archives: Minneapolis Funk*](https://princevault.com/index.php?title=Album:_Black_Archives:_Minneapolis_Funk)
+  * "America":
+    * shortened of 15 seconds
+    * vinyl rip (although the compilation was officially released by Warner Records, in France)
+    * see [Prince.org](https://prince.org/msg/7/471025)
+
 # Posthumous releases
 
 * *Purple Rain (Deluxe Expanded Edition)*
