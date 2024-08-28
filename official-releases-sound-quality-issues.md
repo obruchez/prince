@@ -1,4 +1,6 @@
-# Compilations
+# Official releases sound quality issues
+
+## Compilations
 
 * [*Black Archives: Minneapolis Funk*](https://princevault.com/index.php?title=Album:_Black_Archives:_Minneapolis_Funk)
   * "America":
@@ -6,7 +8,7 @@
     * vinyl rip (although the compilation was officially released by Warner Records, in France)
     * see [Prince.org](https://prince.org/msg/7/471025)
 
-# Posthumous releases
+## Posthumous releases
 
 * [*Purple Rain (Deluxe Expanded Edition)*](https://princevault.com/index.php?title=Album:_Purple_Rain_Deluxe)
   * "Erotic City (Make Love Not War Erotic City Come Alive) (Extended Version)":
