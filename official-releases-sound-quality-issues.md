@@ -17,6 +17,7 @@
 * [*Piano & A Microphone 1983*](https://princevault.com/index.php?title=Album:_Piano_%26_A_Microphone_1983)
 * [*The Versace Experience (Prelude 2 Gold)*](https://princevault.com/index.php?title=Album:_The_Versace_Experience_(Prelude_2_Gold))
 * [*Originals*](https://princevault.com/index.php?title=Album:_Originals)
+  * see feedback from Neversin, etc. [Discord](https://discord.com/channels/1156274456168239135/1156274456889667667/1300849682700046449) 
 * [*1999 (Super Deluxe Edition)*](https://princevault.com/index.php?title=Album:_1999_Deluxe)
 * [*Sign O’ The Times (Super Deluxe Edition)*](https://princevault.com/index.php?title=Album:_Sign_O%E2%80%99_The_Times_Deluxe)
   * "Wally":
