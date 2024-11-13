@@ -19,7 +19,7 @@
 * [*Originals*](https://princevault.com/index.php?title=Album:_Originals)
   * TODO: see feedback from Neversin, etc. [Discord](https://discord.com/channels/1156274456168239135/1156274456889667667/1300849682700046449) 
 * [*1999 (Super Deluxe Edition)*](https://princevault.com/index.php?title=Album:_1999_Deluxe)
-  * TODO: see feedback from someone who could be Neversin [Discord](https://discord.com/channels/1156274456168239135/1156274456889667667/1305982504901017601)  
+  * TODO: see feedback from Sunparadiso [Reddit](https://www.reddit.com/r/PRINCE/comments/1gp4677/why_does_the_estate_fire_all_the_people_who_are/)  
 * [*Sign O’ The Times (Super Deluxe Edition)*](https://princevault.com/index.php?title=Album:_Sign_O%E2%80%99_The_Times_Deluxe)
   * "Wally":
     * TODO: timestamp 
