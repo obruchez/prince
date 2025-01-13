@@ -11,6 +11,9 @@
 ## Posthumous releases
 
 * [*Purple Rain (Deluxe Expanded Edition)*](https://princevault.com/index.php?title=Album:_Purple_Rain_Deluxe)
+  * "Computer Blue"
+    * TODO: timestamp
+    * drop 
   * "Erotic City (Make Love Not War Erotic City Come Alive) (Extended Version)":
     * 0:00-0:01
     * "glitch" right at the beginning of the track
