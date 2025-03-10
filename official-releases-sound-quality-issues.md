@@ -28,7 +28,9 @@
     * TODO: timestamp 
     * table warble
 * [*Welcome 2 America*](https://princevault.com/index.php?title=Album:_Welcome_2_America)
-  * "Stand Up And B Strong" / "Same Page, Different Book" (at least at the end of the track)
+  * "Stand Up And B Strong"
+  * "Same Page, Different Book" (at least at the end of the track)
+  * "1010 (Rin Tin Tin)"
     * CD-R clicks
     * Morris Hayes mentions in an interview for [Violet (a French podcast about Prince)](https://podcast.ausha.co/violet/welcome-2-america-le-monde-selon-prince) that he didn't have the multitracks to work on the tracks, but only a stereo mixdown on CD-R, which means that he had to rip that CD-R and then add his parts! I wonder if the clicks we hear are from that specific step during the process. Either the CD-R Prince sent to Morris was faulty or the drive Morris used was not good enough. Either way, it's quite insane, but possible.
 * [*Diamonds And Pearls (Super Deluxe Edition)*](https://princevault.com/index.php?title=Album:_Diamonds_And_Pearls_SuperDeluxe)
