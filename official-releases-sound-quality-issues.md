@@ -42,7 +42,7 @@
     * Two different versions (badly) stitched together
   * "Wally"
     * 1:37-2:00, 4:37-end
-    * Table warble
+    * Tape warble
 * [*Welcome 2 America*](https://princevault.com/index.php?title=Album:_Welcome_2_America)
   * "Stand Up And B Strong"
   * "Same Page, Different Book" (at least at the end of the track)
