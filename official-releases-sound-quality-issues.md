@@ -11,12 +11,18 @@
 ## Posthumous releases
 
 * [*Purple Rain (Deluxe Expanded Edition)*](https://princevault.com/index.php?title=Album:_Purple_Rain_Deluxe)
-  * "Computer Blue"
-    * TODO: timestamp
-    * Drop
+  * "Computer Blue ("Hallway Speech" Version)"
+    * 3:34
+    * Drop-out on right channel
+  * "Our Destiny / Roadhouse Garden"
+    * 2:52
+    * Spliced from two different sources/versions
+  * "Velvet Kitty Cat"
+    * 15 kHz frequency cut-off
   * "Erotic City (Make Love Not War Erotic City Come Alive) (Extended Version)"
     * 0:00-0:01
-    * "Glitch" right at the beginning of the track
+    * Drop-out/glitch right at the beginning of the track
+  * See [Bluegangsta's post](https://prince.org/msg/7/443883)
 * [*Piano & A Microphone 1983*](https://princevault.com/index.php?title=Album:_Piano_%26_A_Microphone_1983)
 * [*The Versace Experience (Prelude 2 Gold)*](https://princevault.com/index.php?title=Album:_The_Versace_Experience_(Prelude_2_Gold))
 * [*Originals*](https://princevault.com/index.php?title=Album:_Originals)
@@ -25,14 +31,17 @@
 * [*1999 (Super Deluxe Edition)*](https://princevault.com/index.php?title=Album:_1999_Deluxe)
   * TODO: see feedback from Sunparadiso [Reddit](https://www.reddit.com/r/PRINCE/comments/1gp4677/why_does_the_estate_fire_all_the_people_who_are/)  
 * [*Sign O’ The Times (Super Deluxe Edition)*](https://princevault.com/index.php?title=Album:_Sign_O%E2%80%99_The_Times_Deluxe)
-  * "Crucial (Alternate Lyrics)""
+  * "All My Dreams"
+    * 6:56-end
+    * Treble fluctuations/loss
+  * "Crucial (Alternate Lyrics)"
     * Posthumous remix by Niko Bolas (aka "Frankenstein mix")
     * Includes Clare Fisher's orchestra, recorded for the final version of "Crucial" and not this one (earlier version)
   * "Rebirth Of The Flesh (Original Outro)"
-    * TODO: timestamp
+    * 5:14
     * Two different versions (badly) stitched together
   * "Wally"
-    * TODO: timestamp 
+    * 1:37-2:00, 4:37-end
     * Table warble
 * [*Welcome 2 America*](https://princevault.com/index.php?title=Album:_Welcome_2_America)
   * "Stand Up And B Strong"
