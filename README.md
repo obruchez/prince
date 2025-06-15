@@ -1,6 +1,6 @@
 # Prince
 
-* [Official releases sound quality issues](official-releases-sound-quality-issues.md)
+* [Official releases sound quality and other issues](official-releases-sound-quality-issues.md)
 * [Unanswered questions](unanswered-questions.md)
 
 ## Contact
