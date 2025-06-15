@@ -48,17 +48,19 @@
   * "Same Page, Different Book" (at least at the end of the track)
   * "1010 (Rin Tin Tin)"
     * CD-R clicks
-    * Morris Hayes mentions in an interview for [Violet (a French podcast about Prince)](https://podcast.ausha.co/violet/welcome-2-america-le-monde-selon-prince) that he didn't have the multitracks to work on the tracks, but only a stereo mixdown on CD-R, which means that he had to rip that CD-R and then add his parts! I wonder if the clicks we hear are from that specific step during the process. Either the CD-R Prince sent to Morris was faulty or the drive Morris used was not good enough. Either way, it's quite insane, but possible.
+    * Morris Hayes mentions in an interview for [Violet (a French podcast about Prince)](https://podcast.ausha.co/violet/welcome-2-america-le-monde-selon-prince) that he didn't have the multitracks to work on the tracks, but only a stereo mixdown on CD-R, which means that he had to rip that CD-R and then add his parts. I wonder if the clicks we hear are from that specific step during the process. Either the CD-R Prince sent to Morris was faulty or the drive Morris used was not good enough. Either way, it's quite insane, but possible.
 * [*Diamonds And Pearls (Super Deluxe Edition)*](https://princevault.com/index.php?title=Album:_Diamonds_And_Pearls_SuperDeluxe)
   * "Gett Off"
     * TODO: check 
     * Incorrect speed as well?
   * "Money Don’t Matter 2 Night"
-    * TODO: description, timestamp 
-    * See [Kares' reply](https://prince.org/msg/7/470977?&pg=2)
+    * 0:00
+    * Two fading-in snare sounds at the beginning missing
+    * See [Prince.org](https://prince.org/msg/7/470977?&pg=2)
   * "Money Don’t Matter 2 Night"
-    * TODO: description, see thread above 
-    * Incorrect speed
+    * TODO: check
+    * Incorrect speed?
+    * See [Prince.org](https://prince.org/msg/7/470977?&pg=2)
   * "My Tender Heart"
     * Posthumous remix by Chris James (aka "Frankenstein mix")
     * The version on *Diamonds And Pearls SDE* uses a later Ricky Peterson production (with bass, guitar, organ, keyboards, strings & The Steeles' backing vocals) instead of the original instrumentation from Prince's actual version
