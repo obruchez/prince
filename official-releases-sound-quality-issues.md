@@ -66,3 +66,8 @@
     * The version on *Diamonds And Pearls SDE* uses a later Ricky Peterson production (with bass, guitar, organ, keyboards, strings & The Steeles' backing vocals) instead of the original instrumentation from Prince's actual version
     * The song was originally recorded as "My Tender Love" (Rosie Gaines solo), then reworked as "My Tender Heart" (Prince's version), then a third version was released on *Concrete Jungle* (Rosie overdubbing to Prince's lyrics with both singing background vocals). The *Concrete Jungle* version shows how Prince's version should have sounded with the correct instrumentation.
     * See [TheSilentMikey's explanation](https://discord.com/channels/1156274456168239135/1156274456889667667/1381999944357122159)
+* [*America (12" Version)*](https://princevault.com/index.php/Single:_America)
+    * there's a buzzing sound during the last 7 seconds of the track (fade out)
+    * observations from [Kares](https://discord.com/channels/1156274456168239135/1156274456889667667/1390388616340963383):
+      * "the new remaster plays slightly slower than the original, and even slower compared to the HDTracks version that came out in 2013 (?). So the HDTracks version is a little bit faster than the original, the 2025 version is a little bit slower."
+      * "both the HDTracks and the 2025 versions are flipped (inverted waveforms) compared to the original"
