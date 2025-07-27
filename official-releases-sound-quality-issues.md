@@ -68,6 +68,6 @@
     * See [TheSilentMikey's explanation](https://discord.com/channels/1156274456168239135/1156274456889667667/1381999944357122159)
 * [*America (12" Version)*](https://princevault.com/index.php/Single:_America) (2025 remaster)
     * There's a buzzing sound during the last 7 seconds of the track (fade out)
-    * observations from [Kares](https://discord.com/channels/1156274456168239135/1156274456889667667/1390388616340963383):
+    * Observations from [Kares](https://discord.com/channels/1156274456168239135/1156274456889667667/1390388616340963383)
       * "The new remaster plays slightly slower than the original, and even slower compared to the HDTracks version that came out in 2013 (?). So the HDTracks version is a little bit faster than the original, the 2025 version is a little bit slower."
       * "Both the HDTracks and the 2025 versions are flipped (inverted waveforms) compared to the original."
