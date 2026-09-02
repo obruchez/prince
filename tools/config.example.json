@@ -1,0 +1,14 @@
+{
+  "guilds": {
+    "Some Server": "123456789012345678"
+  },
+  "private_servers": [
+    "Direct Messages"
+  ],
+  "sanity_discord_ids": {
+    "123456789012345678": "a message you expect in the index"
+  },
+  "sanity_princeorg_msg_ids": {
+    "9969024": "Bluegangsta on Purple Rain Deluxe"
+  }
+}
