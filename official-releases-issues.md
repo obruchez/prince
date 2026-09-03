@@ -1,12 +1,6 @@
-# Official releases sound quality and other issues
+# Known issues with official Prince releases
 
-## Compilations
-
-* [*Black Archives: Minneapolis Funk*](https://princevault.com/index.php?title=Album:_Black_Archives:_Minneapolis_Funk)
-  * "America"
-    * Shortened of 15 seconds
-    * Vinyl rip (although the compilation was officially released by Warner Records, in France)
-    * See [Prince.org](https://prince.org/msg/7/471025)
+Sound defects, posthumous edits or overdubs, and credits or artwork errors reported on official Prince releases, with links to the reports.
 
 ## Posthumous releases
 
@@ -206,3 +200,11 @@
     * Posthumous horn overdubs: three trombone tracks recorded by Greg Boyer in 2026 on top of the original keyboard horns, whereas the liner notes credit the horns to the January 2003 session; the Estate first denied any addition, then acknowledged it
     * The 2003 mix runs 3:29, without horns
     * See [Databank's post](https://prince.org/msg/7/472138#msg_10600664), [Greg Boyer's answers](https://prince.org/msg/7/472138?&pg=2#msg_10600727) and [Charles F. Spicer Jr.'s statement](https://prince.org/msg/7/472138?&pg=2#msg_10600737)
+
+## Compilations
+
+* [*Black Archives: Minneapolis Funk*](https://princevault.com/index.php?title=Album:_Black_Archives:_Minneapolis_Funk)
+  * "America"
+    * Shortened of 15 seconds
+    * Vinyl rip (although the compilation was officially released by Warner Records, in France)
+    * See [Prince.org](https://prince.org/msg/7/471025)

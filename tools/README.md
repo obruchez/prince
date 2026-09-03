@@ -1,6 +1,6 @@
 # Tools
 
-Scripts used to mine fan reports for `official-releases-sound-quality-issues.md`.
+Scripts used to mine fan reports for `official-releases-issues.md`.
 
 ## Sources
 
