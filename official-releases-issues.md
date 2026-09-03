@@ -158,7 +158,7 @@ Sound defects, posthumous edits or overdubs, and credits or artwork errors repor
     * The version on *Diamonds And Pearls SDE* uses a later Ricky Peterson production (with bass, guitar, organ, keyboards, strings & The Steeles' backing vocals) instead of the original instrumentation from Prince's actual version
     * The song was originally recorded as "My Tender Love" (Rosie Gaines solo), then reworked as "My Tender Heart" (Prince's version), then a third version was released on *Concrete Jungle* (Rosie overdubbing to Prince's lyrics with both singing background vocals). The *Concrete Jungle* version shows how Prince's version should have sounded with the correct instrumentation.
     * See [TheSilentMikey's explanation](https://discord.com/channels/1156274456168239135/1156274456889667667/1381999944357122159)
-* [*United States Of Division*](https://princevault.com/index.php?title=Song:_United_States_Of_Division) (2024 digital single)
+* [*United States Of Division*](https://princevault.com/index.php?title=United_States_Of_Division) (2024 digital single)
   * 5:01-5:49
   * Different edit and mix from the 2004 B-side, although presented as "sourced from the original master tapes": the guitar part heard from 5:01 on the 2004 version is missing, a new bit is added before it, a part of the horn section is discarded and the gap at the breakdown is about 30 ms shorter
   * Plays slightly faster than the 2004 version
@@ -186,7 +186,7 @@ Sound defects, posthumous edits or overdubs, and credits or artwork errors repor
     * Credits
       * Credited to Prince instead of Prince And The Revolution on Apple Music
       * See [Kares' post](https://discord.com/channels/1156274456168239135/1156274456889667667/1390604792426139668)
-* [*Around The World In A Day (Deluxe Edition)*](https://princevault.com/index.php?title=Album:_Around_The_World_In_A_Day_Deluxe)
+* [*Around The World In A Day (40th Anniversary Deluxe Edition)*](https://princevault.com/index.php?title=Album:_Around_The_World_In_A_Day_(40th_Anniversary_Deluxe_Edition))
   * "Girl (12" Version)"
     * 0:00-7:34
     * Plays 1.74% slower than the 7" version (and about 2% slower than the original 12" single), then goes back to the correct speed at 7:34, so that only the last note is at the correct pitch
