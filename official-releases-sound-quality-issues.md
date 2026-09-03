@@ -37,10 +37,37 @@
   * See [Databank's post](https://prince.org/msg/7/472140#msg_10600814)
 * [*The Versace Experience (Prelude 2 Gold)*](https://princevault.com/index.php?title=Album:_The_Versace_Experience_(Prelude_2_Gold))
 * [*Originals*](https://princevault.com/index.php?title=Album:_Originals)
-  * TODO: see feedback from Neversin, etc. [Discord](https://discord.com/channels/1156274456168239135/1156274456889667667/1300849682700046449)
-  * Mostly posthumous remixes by Niko Bolas (aka "Frankenstein mixes")
+  * Mostly posthumous remixes by Niko Bolas (aka "Frankenstein mixes"): Prince's vocals mixed with elements of the versions released by other artists; the only track not remixed is "Love… Thy Will Be Done"
+  * "Nothing Compares 2 U"
+    * Prince's vocal version mixed with The Family's version
+  * "Manic Monday"
+    * Prince's vocal version mixed with the Apollonia 6 version (including Brenda Bennett and Jill Jones' background vocals)
+  * "100 MPH"
+    * TODO: check
+    * Vocals extracted from a cassette mix with software
+  * "Holly Rock"
+    * Prince's vocal version mixed with the Sheila E. version ("suffers the most of it, too much to list", according to Neversin)
+  * "Baby, You’re A Trip"
+    * Prince's vocal version mixed with the Jill Jones version (including Jill's background vocals)
+    * Dry drum track, unlike both the circulating demo and Jill Jones' version
+  * "Dear Michaelangelo"
+    * Prince's vocal version mixed with the Sheila E. version (Eddie M.'s saxophone instead of the synth lines of the demo)
+  * "Noon Rendezvous" and "The Glamorous Life"
+    * TODO: check
+    * Drum/percussion tracks partly muted or turned down compared with the circulating mixes
+  * See [Neversin's post](https://prince.org/msg/7/459188?&pg=28#msg_10302924) (also [quoted on Discord](https://discord.com/channels/1156274456168239135/1156274456889667667/1300849682700046449)), [Prince.org](https://prince.org/msg/7/467671) and [Scififilmnerd's list](https://chronologicalprincerecordingsindex.blogspot.com/2020/11/frankenstein-mixes-work-done-to-princes.html)
 * [*1999 (Super Deluxe Edition)*](https://princevault.com/index.php?title=Album:_1999_Deluxe)
   * TODO: see feedback from Sunparadiso [Reddit](https://www.reddit.com/r/PRINCE/comments/1gp4677/why_does_the_estate_fire_all_the_people_who_are/)  
+  * "Feel U Up"
+    * 3:30-3:35
+    * Uneven mix: synth levels much too low when the music winds down and picks back up, compared with the circulating version
+  * "Irresistible Bitch"
+    * 3:35-end
+    * Drum track turned down, compared with the circulating version
+  * "If It’ll Make U Happy"
+    * TODO: check
+    * Reverb added posthumously ("virtually unlistenable")
+  * See [bigtallwall's post](https://prince.org/msg/7/467671?&pg=2#msg_10513629) and [Se7en's post](https://prince.org/msg/7/463163#msg_10392305)
 * [*Sign O’ The Times (Super Deluxe Edition)*](https://princevault.com/index.php?title=Album:_Sign_O%E2%80%99_The_Times_Deluxe)
   * "All My Dreams"
     * 6:56-end
@@ -80,16 +107,14 @@
     * See [Prince.org](https://prince.org/msg/7/468542) and [Databank's post](https://prince.org/msg/7/472140#msg_10600814)
 * [*Diamonds And Pearls (Super Deluxe Edition)*](https://princevault.com/index.php?title=Album:_Diamonds_And_Pearls_SuperDeluxe)
   * "Gett Off"
-    * TODO: check 
-    * Incorrect speed as well?
+    * TODO: check
+    * All the "Gett Off" mixes on the remixes disc play at the original tape speed, i.e. slightly slower and lower than on the US singles (which were faster/higher, intentionally or not)
+    * See [Mr. Z's post](https://discord.com/channels/1156274456168239135/1156274456889667667/1167436952140791869)
   * "Money Don’t Matter 2 Night"
     * 0:00
     * Two fading-in snare sounds at the beginning missing
-    * See [Prince.org](https://prince.org/msg/7/470977?&pg=2)
-  * "Money Don’t Matter 2 Night"
-    * TODO: check
-    * Incorrect speed?
-    * See [Prince.org](https://prince.org/msg/7/470977?&pg=2)
+    * Tape speed "corrected": plays slightly slower and lower in pitch than the original release, whereas Prince deliberately mastered the song a bit faster/sharper (confirmed by Michael Howe)
+    * See [Kares' post](https://prince.org/msg/7/470977?&pg=2#msg_10580355) and [follow-up](https://prince.org/msg/7/470977?&pg=2#msg_10580411)
   * "My Tender Heart"
     * Posthumous remix by Chris James (aka "Frankenstein mix")
     * The version on *Diamonds And Pearls SDE* uses a later Ricky Peterson production (with bass, guitar, organ, keyboards, strings & The Steeles' backing vocals) instead of the original instrumentation from Prince's actual version
