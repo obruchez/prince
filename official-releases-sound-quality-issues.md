@@ -15,6 +15,13 @@
     * Not the original 7" single edit, but a new edit made for this compilation
     * See [Databank's post](https://prince.org/msg/7/472102#msg_10599869)
 * [*Purple Rain (Deluxe Expanded Edition)*](https://princevault.com/index.php?title=Album:_Purple_Rain_Deluxe)
+  * "The Dance Electric"
+    * TODO: check
+    * Drop-out reported (unconfirmed)
+  * "Love And Sex"
+    * Beginning of the track
+    * Minor drop-out right before the drums come in
+    * See [BoraBora's post](https://prince.org/msg/7/443819#msg_9968292)
   * "Computer Blue ("Hallway Speech" Version)"
     * 3:34
     * Drop-out on right channel
@@ -27,7 +34,7 @@
     * 0:00-0:01
     * Drop-out/glitch right at the beginning of the track
     * Still present on streaming platforms as of 2026
-  * See [Bluegangsta's post](https://prince.org/msg/7/443883)
+  * See [Bluegangsta's post](https://prince.org/msg/7/443883#msg_9969024)
   * Credits
     * "Possessed" is the 1984 version, but is credited as the "1983 version"
     * Jill Jones’ credits omitted
@@ -72,15 +79,20 @@
   * "All My Dreams"
     * 6:56-end
     * Treble fluctuations/loss
+    * See [mbdtyler's post](https://prince.org/msg/7/464438?&pg=2#msg_10429216)
   * "Crucial (Alternate Lyrics)"
     * Posthumous remix by Niko Bolas (aka "Frankenstein mix")
     * Includes Clare Fisher's orchestra, recorded for the final version of "Crucial" and not this one (earlier version)
+    * See [Number23's post](https://prince.org/msg/7/464308?&pg=9#msg_10427819) (faint orchestral parts in the breakdown and during the guitar solo)
   * "Rebirth Of The Flesh (Original Outro)"
     * 5:14
-    * Two different versions (badly) stitched together
+    * Two different versions (badly) stitched together (the drum reverb changes at the crossfade)
+    * Sounds flat, a few generations removed from the master
+    * See [Bluegangsta's post](https://prince.org/msg/7/464440#msg_10428294)
   * "Wally"
     * 1:37-2:00, 4:37-end
     * Tape warble
+    * See [SchlomoThaHomo's post](https://prince.org/msg/7/464318?&pg=17#msg_10428255) and [Prince.org](https://prince.org/msg/7/464440)
   * "Shockadelica" and "La, La, La, He, He, Hee"
     * TODO: check
     * 7" and 12" versions reportedly differ in pitch
@@ -93,7 +105,11 @@
     * See [donovd99's post](https://discord.com/channels/1156274456168239135/1156682267951898644/1499155679301074964) and [confirmation](https://discord.com/channels/1156274456168239135/1156682267951898644/1499315134965874738)
 * [*Welcome 2 America*](https://princevault.com/index.php?title=Album:_Welcome_2_America)
   * "Stand Up And B Strong"
+    * Jittery noise in the background, clicks (e.g. in the bass fill after the first chorus)
+    * See [Romeoblu's post](https://prince.org/msg/7/467161?&pg=6#msg_10501384) and [SchlomoThaHomo's post](https://prince.org/msg/7/467161?&pg=8#msg_10501508)
   * "Same Page, Different Book" (at least at the end of the track)
+    * Clicks, already present in the file Prince shared in early 2013
+    * See [fredmagnus' post](https://prince.org/msg/7/467161?&pg=15#msg_10503378) and [follow-up](https://prince.org/msg/7/467306?&pg=2#msg_10503594)
   * "1010 (Rin Tin Tin)"
     * CD-R clicks
     * Morris Hayes mentions in an interview for [Violet (a French podcast about Prince)](https://podcast.ausha.co/violet/welcome-2-america-le-monde-selon-prince) that he didn't have the multitracks to work on the tracks, but only a stereo mixdown on CD-R, which means that he had to rip that CD-R and then add his parts. I wonder if the clicks we hear are from that specific step during the process. Either the CD-R Prince sent to Morris was faulty or the drive Morris used was not good enough. Either way, it's quite insane, but possible.
