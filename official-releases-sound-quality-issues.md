@@ -14,6 +14,10 @@
   * "Let’s Work"
     * Not the original 7" single edit, but a new edit made for this compilation
     * See [Databank's post](https://prince.org/msg/7/472102#msg_10599869)
+  * "Moonbeam Levels"
+    * TODO: check
+    * Sourced from a cassette (or a bootleg) rather than from the master tape
+    * See [Se7en's post](https://prince.org/msg/7/461651#msg_10352758)
 * [*Purple Rain (Deluxe Expanded Edition)*](https://princevault.com/index.php?title=Album:_Purple_Rain_Deluxe)
   * "The Dance Electric"
     * TODO: check
@@ -39,14 +43,27 @@
     * "Possessed" is the 1984 version, but is credited as the "1983 version"
     * Jill Jones’ credits omitted
     * See [Databank's post](https://prince.org/msg/7/472140#msg_10600814)
+* [*Anthology: 1995-2010*](https://princevault.com/index.php?title=Album:_Anthology:_1995-2010)
+  * "Damn U"
+    * End of the track
+    * Ends with the intro of "Arrogance" (album version used as is, segue not edited out)
+    * See [skywalker's post](https://prince.org/msg/7/456070?&pg=6#msg_10200264)
+* NPG Records catalogue (2018 streaming reissue)
+  * *The Chocolate Invasion*: previously unreleased original configuration instead of the 2004 release (intentional or wrong tape?)
+  * *C-Note*: not credited to The New Power Generation, as on its cover
+  * See [Databank's post](https://prince.org/msg/7/456070?&pg=2#msg_10199749)
 * [*Piano & A Microphone 1983*](https://princevault.com/index.php?title=Album:_Piano_%26_A_Microphone_1983)
+  * Transferred at the wrong speed: plays sharp
   * Tape hiss not cleaned up
-  * See [Databank's post](https://prince.org/msg/7/472140#msg_10600814)
+  * See [Kares' post](https://prince.org/msg/7/459040?&pg=2#msg_10285929) and [Databank's post](https://prince.org/msg/7/472140#msg_10600814)
 * [*The Versace Experience (Prelude 2 Gold)*](https://princevault.com/index.php?title=Album:_The_Versace_Experience_(Prelude_2_Gold))
+  * Sourced from a cassette rather than from a master tape (tape hiss, lo-fi vocals)
+  * Plays slightly fast compared with the same tracks on *The Gold Experience* CD
+  * See [toejam's post](https://prince.org/msg/7/460763#msg_10330209), [VaultCurator's post](https://prince.org/msg/7/460763#msg_10330225) and [BartVanHemelen's post](https://prince.org/msg/7/459946?&pg=5#msg_10320164)
 * [*Originals*](https://princevault.com/index.php?title=Album:_Originals)
   * Mostly posthumous remixes by Niko Bolas (aka "Frankenstein mixes"): Prince's vocals mixed with elements of the versions released by other artists; the only track not remixed is "Love… Thy Will Be Done"
   * "Nothing Compares 2 U"
-    * Prince's vocal version mixed with The Family's version
+    * Prince's vocal version mixed with The Family's version (same posthumous mix as the 2018 single)
   * "Manic Monday"
     * Prince's vocal version mixed with the Apollonia 6 version (including Brenda Bennett and Jill Jones' background vocals)
   * "100 MPH"
@@ -63,6 +80,10 @@
     * TODO: check
     * Drum/percussion tracks partly muted or turned down compared with the circulating mixes
   * See [Neversin's post](https://prince.org/msg/7/459188?&pg=28#msg_10302924) (also [quoted on Discord](https://discord.com/channels/1156274456168239135/1156274456889667667/1300849682700046449)), [Prince.org](https://prince.org/msg/7/467671) and [Scififilmnerd's list](https://chronologicalprincerecordingsindex.blogspot.com/2020/11/frankenstein-mixes-work-done-to-princes.html)
+* [*Chaos And Disorder*](https://princevault.com/index.php?title=Album:_Chaos_And_Disorder) (2019 vinyl reissue)
+  * Artwork
+    * The track listing on the jacket does not match the actual sides: "Zannalee" is on side A (after "Right The Wrong") and side B starts with "I Rock, Therefore I Am"
+    * See [TrcikyChristopher's post](https://prince.org/msg/7/460675?&pg=2#msg_10330076)
 * [*1999 (Super Deluxe Edition)*](https://princevault.com/index.php?title=Album:_1999_Deluxe)
   * TODO: see feedback from Sunparadiso [Reddit](https://www.reddit.com/r/PRINCE/comments/1gp4677/why_does_the_estate_fire_all_the_people_who_are/)  
   * "Feel U Up"
@@ -122,10 +143,17 @@
     * Cover says "1953-1993" instead of "1958-1993"
     * See [Prince.org](https://prince.org/msg/7/468542) and [Databank's post](https://prince.org/msg/7/472140#msg_10600814)
 * [*Diamonds And Pearls (Super Deluxe Edition)*](https://princevault.com/index.php?title=Album:_Diamonds_And_Pearls_SuperDeluxe)
+  * Remastered album
+    * Gaps between tracks altered (e.g. longer gap between "Willing And Able" and the scream of "Gett Off")
+    * See [ElectricThighs' post](https://prince.org/msg/7/470388#msg_10569925)
   * "Gett Off"
-    * TODO: check
+    * Tape speed "corrected" as for "Money Don’t Matter 2 Night" (see below), and, according to Kares, many other tracks got the same treatment
     * All the "Gett Off" mixes on the remixes disc play at the original tape speed, i.e. slightly slower and lower than on the US singles (which were faster/higher, intentionally or not)
-    * See [Mr. Z's post](https://discord.com/channels/1156274456168239135/1156274456889667667/1167436952140791869)
+    * See [TheSilentMikey's post](https://discord.com/channels/1085687623076548630/1085689325028651108/1255797720313233458), [Kares' confirmation](https://discord.com/channels/1085687623076548630/1085689325028651108/1255933290481975337) and [Mr. Z's post](https://discord.com/channels/1156274456168239135/1156274456889667667/1167436952140791869)
+  * "Gett Off (Damn Near 10 Min.)"
+    * TODO: check
+    * Sound quality well below the original 12" (vinyl)
+    * See [ElectricThighs' post](https://prince.org/msg/7/470388#msg_10569925)
   * "Money Don’t Matter 2 Night"
     * 0:00
     * Two fading-in snare sounds at the beginning missing
@@ -136,11 +164,21 @@
     * The version on *Diamonds And Pearls SDE* uses a later Ricky Peterson production (with bass, guitar, organ, keyboards, strings & The Steeles' backing vocals) instead of the original instrumentation from Prince's actual version
     * The song was originally recorded as "My Tender Love" (Rosie Gaines solo), then reworked as "My Tender Heart" (Prince's version), then a third version was released on *Concrete Jungle* (Rosie overdubbing to Prince's lyrics with both singing background vocals). The *Concrete Jungle* version shows how Prince's version should have sounded with the correct instrumentation.
     * See [TheSilentMikey's explanation](https://discord.com/channels/1156274456168239135/1156274456889667667/1381999944357122159)
+* [*United States Of Division*](https://princevault.com/index.php?title=Song:_United_States_Of_Division) (2024 digital single)
+  * 5:01-5:49
+  * Different edit and mix from the 2004 B-side, although presented as "sourced from the original master tapes": the guitar part heard from 5:01 on the 2004 version is missing, a new bit is added before it, a part of the horn section is discarded and the gap at the breakdown is about 30 ms shorter
+  * Plays slightly faster than the 2004 version
+  * See [Kares' post](https://discord.com/channels/1085687623076548630/1085689121521012806/1227172901199941653)
 * Japanese singles (2025 digital reissues)
   * "Love Or Money (Extended 12" Single Version)"
     * TODO: check
-    * Sounds like a vinyl rip
+    * Sounds like a vinyl rip (kick drum attack missing in some sections)
     * 5 seconds of silence at the end of the track
+    * See [cb70's post](https://prince.org/msg/7/471694#msg_10592330)
+  * "Kiss (Extended Version)"
+    * TODO: check (same series of digital reissues?)
+    * Vinyl rip (hiss and crackle audible during the breakdown)
+    * See [shakalakaboom's post](https://prince.org/msg/7/471694#msg_10592405)
   * "Raspberry Beret (Extended 12" Version)"
     * TODO: check
     * Runs 6:40 instead of 6:33 on *His Majesty’s Pop Life* (incorrect speed?)
@@ -150,8 +188,21 @@
     * Observations from [Kares](https://discord.com/channels/1156274456168239135/1156274456889667667/1390388616340963383)
       * "The new remaster plays slightly slower than the original, and even slower compared to the HDTracks version that came out in 2013 (?). So the HDTracks version is a little bit faster than the original, the 2025 version is a little bit slower."
       * "Both the HDTracks and the 2025 versions are flipped (inverted waveforms) compared to the original."
+      * ["It now plays a tiny bit slower than the album version (there's about a 1/4 note shift by the 3-minute mark)"](https://discord.com/channels/1156274456168239135/1156274456889667667/1390607398343020554)
+    * Credits
+      * Credited to Prince instead of Prince And The Revolution on Apple Music
+      * See [Kares' post](https://discord.com/channels/1156274456168239135/1156274456889667667/1390604792426139668)
 * [*Around The World In A Day (Deluxe Edition)*](https://princevault.com/index.php?title=Album:_Around_The_World_In_A_Day_Deluxe)
   * "Girl (12" Version)"
     * 0:00-7:34
-    * Plays 1.74% slower than the 7" version (and than the original 12" single), then goes back to the correct speed at 7:34, so that only the last note is at the correct pitch
-    * See [ElectricThighs' post](https://prince.org/msg/7/471789#msg_10594080), [PeterBravestrong's post](https://discord.com/channels/1156274456168239135/1156274456889667667/1441608941372047450) and [Kares' post](https://discord.com/channels/1156274456168239135/1156682267951898644/1448593545517596743)
+    * Plays 1.74% slower than the 7" version (and about 2% slower than the original 12" single), then goes back to the correct speed at 7:34, so that only the last note is at the correct pitch
+    * See [ElectricThighs' posts](https://prince.org/msg/7/471789#msg_10594080) ([measurements](https://prince.org/msg/7/471789#msg_10594085)), [PeterBravestrong's post](https://discord.com/channels/1156274456168239135/1156274456889667667/1441608941372047450) and [Kares' post](https://discord.com/channels/1156274456168239135/1156682267951898644/1448593545517596743)
+  * Extended versions (e.g. "Pop Life (Extended Version)")
+    * TODO: check
+    * Sound like copies from LP, unlike the album tracks
+    * See [Delirium's post](https://discord.com/channels/670036744498053130/1164744914219831337/1441105607301009499)
+* [*Timeless*](https://princevault.com/index.php?title=Album:_Timeless)
+  * "Calabama"
+    * Posthumous horn overdubs: three trombone tracks recorded by Greg Boyer in 2026 on top of the original keyboard horns, whereas the liner notes credit the horns to the January 2003 session; the Estate first denied any addition, then acknowledged it
+    * The 2003 mix runs 3:29, without horns
+    * See [Databank's post](https://prince.org/msg/7/472138#msg_10600664), [Greg Boyer's answers](https://prince.org/msg/7/472138?&pg=2#msg_10600727) and [Charles F. Spicer Jr.'s statement](https://prince.org/msg/7/472138?&pg=2#msg_10600737)
