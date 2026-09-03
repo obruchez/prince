@@ -1,7 +1,6 @@
-# Discord server dumps (large zips, private data): kept locally only
 discord/
-# Generated full-text index built by tools/build_index.py
 tools/index.db
 tools/index.db-*
 __pycache__/
+.idea/
 .DS_Store
