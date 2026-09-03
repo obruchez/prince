@@ -25,7 +25,8 @@ Sound defects, posthumous edits or overdubs, and credits or artwork errors repor
     * Drop-out on right channel
   * "Our Destiny / Roadhouse Garden"
     * 2:52
-    * Spliced from two different sources/versions
+    * Spliced from two different sources/versions (posthumous crossfade made from two different cassettes, reportedly not faithful to the original crossfade)
+    * See [Databank's post](https://prince.org/msg/7/463532?&pg=8#msg_10400332)
   * "Velvet Kitty Cat"
     * 15 kHz frequency cut-off
   * "Erotic City (Make Love Not War Erotic City Come Alive) (Extended Version)"
@@ -190,7 +191,7 @@ Sound defects, posthumous edits or overdubs, and credits or artwork errors repor
   * "Girl (12" Version)"
     * 0:00-7:34
     * Plays 1.74% slower than the 7" version (and about 2% slower than the original 12" single), then goes back to the correct speed at 7:34, so that only the last note is at the correct pitch
-    * See [ElectricThighs' posts](https://prince.org/msg/7/471789#msg_10594080) ([measurements](https://prince.org/msg/7/471789#msg_10594085)), [PeterBravestrong's post](https://discord.com/channels/1156274456168239135/1156274456889667667/1441608941372047450) and [Kares' post](https://discord.com/channels/1156274456168239135/1156682267951898644/1448593545517596743)
+    * See [ElectricThighs' posts](https://prince.org/msg/7/471789#msg_10594080) ([measurements](https://prince.org/msg/7/471789#msg_10594085)), [PeterBravestrong's post](https://discord.com/channels/1156274456168239135/1156274456889667667/1441608941372047450), [Mr. Z's post](https://discord.com/channels/670036744498053130/1164744914219831337/1441122693976948756) and [Kares' post](https://discord.com/channels/1156274456168239135/1156682267951898644/1448593545517596743)
   * Extended versions (e.g. "Pop Life (Extended Version)")
     * TODO: check
     * Sound like copies from LP, unlike the album tracks
