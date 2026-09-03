@@ -1,6 +1,7 @@
 discord/
 tools/index.db
 tools/index.db-*
+tools/config.local.json
 __pycache__/
 .idea/
 .DS_Store
