@@ -10,5 +10,9 @@
   },
   "sanity_princeorg_msg_ids": {
     "9969024": "Bluegangsta on Purple Rain Deluxe"
-  }
+  },
+  "reddit_subreddits": [
+    "PRINCE"
+  ],
+  "reddit_users": []
 }

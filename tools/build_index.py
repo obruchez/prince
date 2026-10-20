@@ -1,12 +1,16 @@
 #!/usr/bin/env python
-"""Build tools/index.db, a SQLite FTS5 full-text index over two sources:
+"""Build tools/index.db, a SQLite FTS5 full-text index over three sources:
 
 1. Prince.org forum posts, extracted from the raw HTML archived by the
-   prince-org-archiver project (forum 7 "Prince: Music and More" by default,
-   threads active since 2016-04-21).
+   prince-org-archiver project (every forum and every date by default;
+   --forum and --since restrict the run). Posts are deduplicated on their
+   message ID: a few threads were archived with thousands of phantom pages
+   repeating the same posts.
 2. Discord message dumps stored as zips under discord/ (JSON exports only;
    every snapshot is read and messages are deduplicated on their ID, newest
    snapshot first so edited messages keep their latest text).
+3. Reddit posts and comments downloaded by fetch_reddit.py into reddit/
+   (JSON Lines from the Arctic Shift archive, deduplicated on their ID).
 
 Run with the archiver's interpreter, which has BeautifulSoup and lxml:
 
@@ -33,6 +37,7 @@ REPO = Path(__file__).resolve().parent.parent
 ARCHIVER = Path.home() / "Github" / "prince-org-archiver"
 ARCHIVE_DB = ARCHIVER / "data" / "archive.db"
 DISCORD_DIR = REPO / "discord"
+REDDIT_DIR = REPO / "reddit"
 INDEX_DB = REPO / "tools" / "index.db"
 
 CONFIG_FILE = REPO / "tools" / "config.local.json"
@@ -64,12 +69,19 @@ SCHEMA = """
 CREATE VIRTUAL TABLE IF NOT EXISTS princeorg USING fts5(
     thread_id UNINDEXED, page UNINDEXED, msg_id UNINDEXED, reply_no UNINDEXED,
     author, posted UNINDEXED, thread_title, subject, body, quoted, url UNINDEXED,
+    forum_id UNINDEXED, forum UNINDEXED,
     tokenize = 'unicode61 remove_diacritics 2'
 );
 CREATE VIRTUAL TABLE IF NOT EXISTS discord USING fts5(
     id UNINDEXED, server, guild_id UNINDEXED, channel_id UNINDEXED, channel,
     author, display_name, timestamp UNINDEXED, content, attachments,
     url UNINDEXED, private UNINDEXED, snapshot UNINDEXED,
+    tokenize = 'unicode61 remove_diacritics 2'
+);
+CREATE VIRTUAL TABLE IF NOT EXISTS reddit USING fts5(
+    id UNINDEXED, kind UNINDEXED, subreddit, author, created UNINDEXED,
+    title, body, link_id UNINDEXED, parent_id UNINDEXED, url UNINDEXED,
+    score UNINDEXED, retrieved UNINDEXED,
     tokenize = 'unicode61 remove_diacritics 2'
 );
 CREATE TABLE IF NOT EXISTS meta (key TEXT PRIMARY KEY, value TEXT);
@@ -89,20 +101,29 @@ def _parse_date(text: str) -> str:
         return ""
     mo, d, y, h, mi, ampm = m.groups()
     h = int(h) % 12 + (12 if ampm == "pm" else 0)
-    return f"20{y}-{int(mo):02d}-{int(d):02d} {h:02d}:{mi}"
+    century = "19" if int(y) >= 90 else "20"          # the archive starts in 1999
+    return f"{century}{y}-{int(mo):02d}-{int(d):02d} {h:02d}:{mi}"
 
 
-def parse_page(task: tuple[str, int, int, str]) -> list[tuple]:
+def parse_page(task: tuple[str, int, int, str, int | None]) -> list[tuple]:
     """Extract every post of one archived page. Runs in a worker process."""
     from bs4 import BeautifulSoup  # imported here so workers load it lazily
 
-    path, thread_id, page, title = task
+    path, thread_id, page, title, forum_id = task
     try:
         html = Path(path).read_text(encoding="utf-8", errors="replace")
     except OSError:
         return []
     soup = BeautifulSoup(html, "lxml")
-    url = f"https://prince.org/msg/7/{thread_id}" + (f"?&pg={page}" if page > 1 else "")
+    forum = ""
+    for link in soup.select("a[href^='/msg/']"):       # breadcrumb link to the forum, e.g. /msg/8
+        m = re.fullmatch(r"/msg/(\d+)", link.get("href", ""))
+        if m:
+            forum = link.get_text(strip=True)
+            forum_id = forum_id or int(m.group(1))
+            break
+    forum_id = forum_id or 7
+    url = f"https://prince.org/msg/{forum_id}/{thread_id}" + (f"?&pg={page}" if page > 1 else "")
     rows = []
     for table in soup.select("table.msgpost"):
         body_td = table.select_one('td[class^="msgbody"]')
@@ -129,43 +150,82 @@ def parse_page(task: tuple[str, int, int, str]) -> list[tuple]:
             junk.decompose()
         body = re.sub(r"\s+", " ", body_td.get_text(" ", strip=True))
         rows.append((thread_id, page, msg_id, reply_no, author, posted, title,
-                     subject, body, " | ".join(quotes), url))
+                     subject, body, " | ".join(quotes), url, forum_id, forum))
     return rows
 
 
-def index_princeorg(con: sqlite3.Connection, forum: int, since: str,
+def index_princeorg(con: sqlite3.Connection, forum: int | None, since: str | None,
                     limit: int | None, workers: int) -> None:
     src = sqlite3.connect(f"file:{ARCHIVE_DB}?mode=ro", uri=True)
     q = """
-        SELECT t.thread_id, p.page_num, t.title, p.html_path
+        SELECT t.thread_id, p.page_num, t.title, p.html_path, t.forum_id
         FROM threads t JOIN thread_pages p ON p.thread_id = t.thread_id
-        WHERE t.status = 'complete' AND t.forum_id = ? AND t.last_post_date >= ?
-          AND p.html_path IS NOT NULL
-        ORDER BY t.thread_id, p.page_num
+        WHERE p.html_path IS NOT NULL
     """
+    params: list = []
+    if forum is not None:
+        q += " AND t.forum_id = ?"; params.append(forum)
+    if since:
+        q += " AND t.last_post_date >= ?"; params.append(since)
+    q += " ORDER BY t.thread_id, p.page_num"
     tasks = []
-    for thread_id, page, title, html_path in src.execute(q, (forum, since)):
+    for thread_id, page, title, html_path, forum_id in src.execute(q, params):
         p = Path(html_path)
         if not p.is_absolute():
             p = ARCHIVER / p
-        tasks.append((str(p), thread_id, page, title or ""))
+        tasks.append((str(p), thread_id, page, title or "", forum_id))
     src.close()
     if limit:
         tasks = tasks[:limit]
     print(f"[princeorg] {len(tasks)} pages to parse with {workers} workers")
-    con.execute("DELETE FROM princeorg")
+    con.execute("DROP TABLE IF EXISTS princeorg")       # the column set may have changed
+    con.executescript(SCHEMA)
     t0 = time.time()
-    n_posts = 0
+    n_posts = n_dup = 0
+    seen: set = set()
     with Pool(workers) as pool:
-        for i, rows in enumerate(pool.imap_unordered(parse_page, tasks, chunksize=16), 1):
-            if rows:
-                con.executemany("INSERT INTO princeorg VALUES (?,?,?,?,?,?,?,?,?,?,?)", rows)
-                n_posts += len(rows)
-            if i % 2000 == 0:
+        # imap keeps the (thread, page) order, so the first page holding a message wins
+        for i, rows in enumerate(pool.imap(parse_page, tasks, chunksize=32), 1):
+            keep = []
+            for r in rows:
+                mid = r[2]
+                if mid:
+                    key = int(mid) if mid.isdigit() else mid
+                    if key in seen:
+                        n_dup += 1
+                        continue
+                    seen.add(key)
+                keep.append(r)
+            if keep:
+                con.executemany("INSERT INTO princeorg VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)", keep)
+                n_posts += len(keep)
+            if i % 5000 == 0:
                 con.commit()
-                print(f"[princeorg] {i}/{len(tasks)} pages, {n_posts} posts, {time.time()-t0:.0f}s")
+                el = time.time() - t0
+                print(f"[princeorg] {i}/{len(tasks)} pages, {n_posts} posts, {n_dup} duplicates skipped, "
+                      f"{el:.0f}s (about {el / i * (len(tasks) - i) / 60:.0f} min left)", flush=True)
     con.commit()
-    print(f"[princeorg] done: {n_posts} posts from {len(tasks)} pages in {time.time()-t0:.0f}s")
+    print(f"[princeorg] done: {n_posts} posts from {len(tasks)} pages in {time.time()-t0:.0f}s "
+          f"({n_dup} duplicate copies skipped)", flush=True)
+    build_princeorg_lookup(con)
+
+
+def build_princeorg_lookup(con: sqlite3.Connection) -> None:
+    """Plain table mapping FTS rowids to thread and message IDs, with B-tree indexes.
+
+    FTS5 cannot index its UNINDEXED columns: without this table, fetching one
+    thread or one message scans all 9 million posts (about 30 s).
+    """
+    t0 = time.time()
+    con.executescript("""
+        DROP TABLE IF EXISTS princeorg_lookup;
+        CREATE TABLE princeorg_lookup (rowid INTEGER PRIMARY KEY, thread_id INTEGER, msg_id TEXT);
+        INSERT INTO princeorg_lookup SELECT rowid, thread_id, msg_id FROM princeorg;
+        CREATE INDEX princeorg_lookup_thread ON princeorg_lookup (thread_id);
+        CREATE INDEX princeorg_lookup_msg ON princeorg_lookup (msg_id);
+    """)
+    con.commit()
+    print(f"[princeorg] lookup table built in {time.time()-t0:.0f}s", flush=True)
 
 
 # ---------------------------------------------------------------------------
@@ -269,37 +329,125 @@ def index_discord(con: sqlite3.Connection, limit_zips: int | None) -> None:
 
 
 # ---------------------------------------------------------------------------
+# Reddit
+# ---------------------------------------------------------------------------
+
+def _utc(ts) -> str:
+    try:
+        return datetime.utcfromtimestamp(int(ts)).strftime("%Y-%m-%d %H:%M:%S")
+    except (TypeError, ValueError, OSError):
+        return ""
+
+
+def _text(value) -> str:
+    return re.sub(r"\s+", " ", value or "").strip()
+
+
+def _read_jsonl(path: Path):
+    with path.open(encoding="utf-8") as f:
+        for line in f:
+            try:
+                yield json.loads(line)
+            except json.JSONDecodeError:
+                continue
+
+
+def index_reddit(con: sqlite3.Connection) -> None:
+    """Posts first (their titles label the comments), then comments. A user
+    file and a subreddit file can hold the same item: first one wins."""
+    post_files = sorted(REDDIT_DIR.glob("*_posts.jsonl"))
+    comment_files = sorted(REDDIT_DIR.glob("*_comments.jsonl"))
+    if not post_files and not comment_files:
+        print(f"[reddit] nothing under {REDDIT_DIR}, run fetch_reddit.py first")
+        return
+    con.execute("DELETE FROM reddit")
+    titles: dict[str, str] = {}
+    seen: set[str] = set()
+    t0 = time.time()
+    n_posts = n_comments = 0
+    for path in post_files:
+        rows = []
+        for d in _read_jsonl(path):
+            pid = d.get("id", "")
+            if not pid or pid in seen:
+                continue
+            seen.add(pid)
+            sub = d.get("subreddit") or ""
+            titles[pid] = _text(d.get("title"))
+            rows.append((pid, "post", sub, d.get("author") or "", _utc(d.get("created_utc")),
+                         _text(d.get("title")), _text(d.get("selftext")), pid, "",
+                         f"https://www.reddit.com/r/{sub}/comments/{pid}/",
+                         d.get("score"), _utc(d.get("retrieved_on"))))
+        con.executemany("INSERT INTO reddit VALUES (?,?,?,?,?,?,?,?,?,?,?,?)", rows)
+        n_posts += len(rows)
+        print(f"[reddit] {path.name}: {len(rows)} posts")
+    for path in comment_files:
+        rows = []
+        for d in _read_jsonl(path):
+            cid = d.get("id", "")
+            if not cid or cid in seen:
+                continue
+            seen.add(cid)
+            sub = d.get("subreddit") or ""
+            link = (d.get("link_id") or "")[3:]
+            rows.append((cid, "comment", sub, d.get("author") or "", _utc(d.get("created_utc")),
+                         titles.get(link, ""), _text(d.get("body")), link,
+                         (d.get("parent_id") or "")[3:],
+                         f"https://www.reddit.com/r/{sub}/comments/{link}/_/{cid}/",
+                         d.get("score"), _utc(d.get("retrieved_on"))))
+        con.executemany("INSERT INTO reddit VALUES (?,?,?,?,?,?,?,?,?,?,?,?)", rows)
+        n_comments += len(rows)
+        print(f"[reddit] {path.name}: {len(rows)} comments")
+    con.commit()
+    print(f"[reddit] done: {n_posts} posts, {n_comments} comments in {time.time()-t0:.0f}s")
+
+
+# ---------------------------------------------------------------------------
 # Sanity checks
 # ---------------------------------------------------------------------------
 
 def sanity(con: sqlite3.Connection) -> None:
-    print("[sanity] princeorg posts:", con.execute("SELECT COUNT(*) FROM princeorg").fetchone()[0])
+    print("[sanity] princeorg posts:", con.execute("SELECT COUNT(*) FROM princeorg").fetchone()[0],
+          "distinct msg_id:", con.execute("SELECT COUNT(DISTINCT msg_id) FROM princeorg").fetchone()[0])
+    for fid, name, n in con.execute("SELECT forum_id, forum, COUNT(*) FROM princeorg GROUP BY forum_id "
+                                    "ORDER BY 3 DESC LIMIT 12"):
+        print(f"[sanity]   forum {fid} {name}: {n} posts")
     print("[sanity] discord messages:", con.execute("SELECT COUNT(*) FROM discord").fetchone()[0])
+    print("[sanity] reddit items:", con.execute("SELECT COUNT(*) FROM reddit").fetchone()[0])
     for mid, who in CONFIG.get("sanity_discord_ids", {}).items():
         row = con.execute("SELECT server, channel, author, timestamp FROM discord WHERE id = ?", (mid,)).fetchone()
         print(f"[sanity] {who}: {'FOUND ' + str(row) if row else 'missing'}")
     for mid, who in CONFIG.get("sanity_princeorg_msg_ids", {}).items():
-        row = con.execute("SELECT author, posted, url FROM princeorg WHERE msg_id = ?", (mid,)).fetchone()
+        row = con.execute("SELECT author, posted, url FROM princeorg WHERE rowid IN "
+                          "(SELECT rowid FROM princeorg_lookup WHERE msg_id = ?)", (mid,)).fetchone()
         print(f"[sanity] {who}: {row or 'missing'}")
     row = con.execute("SELECT MIN(posted), MAX(posted) FROM princeorg WHERE posted != ''").fetchone()
     print(f"[sanity] princeorg date span: {row}")
     row = con.execute("SELECT MIN(timestamp), MAX(timestamp) FROM discord WHERE private = 0").fetchone()
     print(f"[sanity] discord date span: {row}")
+    row = con.execute("SELECT MIN(created), MAX(created) FROM reddit WHERE created != ''").fetchone()
+    print(f"[sanity] reddit date span: {row}")
 
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--db", type=Path, default=INDEX_DB)
-    ap.add_argument("--forum", type=int, default=7)
-    ap.add_argument("--since", default="2016-04-21", help="threads with last post on/after this date")
+    ap.add_argument("--forum", type=int, help="only this Prince.org forum (default: all), e.g. 7")
+    ap.add_argument("--since", help="only threads with a last post on/after this date (default: all)")
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--limit-pages", type=int, help="testing: only parse N Prince.org pages")
     ap.add_argument("--limit-zips", type=int, help="testing: only read N Discord zips")
     ap.add_argument("--skip-princeorg", action="store_true")
+    ap.add_argument("--lookups-only", action="store_true",
+                    help="only (re)build the Prince.org lookup table of an existing index, then exit")
     ap.add_argument("--skip-discord", action="store_true")
+    ap.add_argument("--skip-reddit", action="store_true")
     args = ap.parse_args()
 
     con = sqlite3.connect(args.db)
+    if args.lookups_only:
+        build_princeorg_lookup(con)
+        return
     con.executescript(SCHEMA)
     if not args.skip_princeorg:
         index_princeorg(con, args.forum, args.since, args.limit_pages, args.workers)
@@ -307,6 +455,9 @@ def main() -> None:
     if not args.skip_discord:
         index_discord(con, args.limit_zips)
         con.execute("INSERT OR REPLACE INTO meta VALUES ('discord_built', ?)", (datetime.now().isoformat(timespec='seconds'),))
+    if not args.skip_reddit:
+        index_reddit(con)
+        con.execute("INSERT OR REPLACE INTO meta VALUES ('reddit_built', ?)", (datetime.now().isoformat(timespec='seconds'),))
     con.commit()
     sanity(con)
     con.close()
